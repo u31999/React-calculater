@@ -1,0 +1,59 @@
+:root {
+    --bags-color: #ffecce;
+    --transparent-black: #555a60; 
+    --orange: #f5b14f;
+    --white: #e7e7e7;
+    --white-Background: #fefdf9;
+}
+
+/* Title style */
+div.title {
+    display: flex;
+    align-items: center;
+}
+
+div.title h2 {
+    font-weight: 900;
+    letter-spacing: 2px;
+    font-family: cursive;
+    color: var(--orange);
+    text-shadow: black 1px 2px 3px;
+}
+
+/* Footer Style */
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+footer:first-child {
+    font-weight: 100;
+    font-size: 12px;
+}
+footer .footer-icon {
+    display: flex;
+    gap: 20px;
+}
+
+
+footer .footer-icon div a {
+    font-size: 24px;
+    
+}
+
+footer.light .footer-icon div a {
+    color: var(--transparent-black);
+}
+footer.dark .footer-icon div a {
+    color: var(--orange);
+}
+
+footer .footer-icon div a:hover {
+    color: var(--orange);
+}
+
+footer.dark .footer-icon div a:hover {
+    color: var(--white);
+}
