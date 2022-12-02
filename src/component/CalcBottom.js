@@ -29,6 +29,7 @@ const CalcBottom = ({inputValue, setInputValue, sign, setSign,
       case '-':
         result = calculation.subtraction(numOne, numTwo);
         break;
+      
       default:
         break;
     }
@@ -92,6 +93,13 @@ const CalcBottom = ({inputValue, setInputValue, sign, setSign,
         setSignAndNumOne('/', inputValue)
       } else if(e.target.value === '*') {
          setSignAndNumOne('*', inputValue)
+      } else if(e.target.value === '%') {
+        let r = calculation.multiplyByHundred(inputValue)
+        setSign('%')
+        setCalcValue(r)
+        setNumOne(r)
+        setInputValue('0')
+        
       } else if(e.target.value === '=' && sign !== null) {
         let calcResult = calc(sign, numOne, inputValue)
         setCalcValue(calcResult)

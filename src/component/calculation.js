@@ -3,4 +3,5 @@ export const calculation = {
     multiply: (numOne, numTwo) => Number(numOne) * Number(numTwo),
     subtraction: (numOne, numTwo) => Number(numOne) - Number(numTwo),
     divide: (numOne, numTwo) => Number(numOne) / Number(numTwo),
+    multiplyByHundred: (numTwo) => Number(numTwo) * 100
 }
